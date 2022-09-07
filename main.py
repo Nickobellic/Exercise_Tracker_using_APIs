@@ -3,11 +3,11 @@ from datetime import datetime
 
 today = datetime.now()
 
-NUTRITIONIX_API_ID = "6c70631f"
-NUTRITIONIX_API_KEY = "17934007abb94923ae1b186cd83a1ff5"
+NUTRITIONIX_API_ID = "<api-id>"
+NUTRITIONIX_API_KEY = "<api-key>"
 
-nutritionix_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
-sheety_api_endpoint = "https://api.sheety.co/6c961bb1746331e874a97aaf332fbc6a/exerciseTracker/workouts"
+nutritionix_endpoint = "<nutritionix_endpoint>"
+sheety_api_endpoint = "<sheety_endpoint>"
 
 header = {
     'x-app-id': NUTRITIONIX_API_ID,
@@ -31,7 +31,7 @@ calories = [content['exercises'][i]['nf_calories'] for i in range(len(content['e
 
 
 sheety_header = {
-    'Authorization': 'Basic YXZyYWh1bGthbm5hOmF2cktfMjAwNA'
+    'Authorization': '<id for basic authentication>'
 }
 
 workout = { 'workout': {
